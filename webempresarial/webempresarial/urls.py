@@ -30,6 +30,8 @@ urlpatterns = [
     path('blog/', include('blog.urls')),
     #Path de la APP page
     path('page/', include('pages.urls')),
+    #Path de la APP contact
+    path('contact/', include('contact.urls')),
 ]
 
 if settings.DEBUG:
