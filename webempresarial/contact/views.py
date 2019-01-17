@@ -15,7 +15,7 @@ def contact(request):
             #Enviamos el correo y redireccionamos
             email = EmailMessage(
                 "La Caffetiera: Nuevo mensaje de contacto",
-                "De {} <{}>\n\nEscribió:\n\n{}".format(name, email, content),
+                "De {} <{}>\n\nEscribió esto:\n\n{}".format(name, email, content),
                 "no-contestar@inbox.mailtrap.io",
                 ["edu_hernaiz@hotmail.com"],
                 reply_to=[email]
